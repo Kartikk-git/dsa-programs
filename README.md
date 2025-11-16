@@ -1,60 +1,34 @@
-dsa-programs
-A collection of Data Structures & Algorithms implementations in C. This repository contains readable, well-documented C programs demonstrating common DSA topics and useful utilities for learning and reference.
+# C DSA Programs
 
-Contents
-arrays/
-linked-lists/
-stacks-queues/
-trees/
-graphs/
-sorting-searching/
-dynamic-programming/
-math/
-utils/ Each folder contains C source files implementing algorithms or data structures, with example usage in comments.
-Features
-Plain C implementations (C11 compatible)
-Small, focused programs for learning and testing
-Clear comments describing problem, approach, complexity, and usage
-Consistent naming and structure to make navigation easy
-Getting started
-Prerequisites
+## Overview
 
-GCC (or another C compiler) supporting C11
-Make (optional)
-Compile a single file: gcc -std=c11 -Wall -Wextra path/to/file.c -o path/to/executable
+This repository contains a collection of C programs demonstrating various **Data Structures & Algorithms** concepts, algorithms, and problem-solving techniques. Each program is organized for ease of understanding and learning.
 
-Compile all .c files into bin/ (example): mkdir -p bin for f in $(find . -name "*.c"); do gcc -std=c11 -Wall -Wextra "
-f
-"
-(basename "${f%.c}")" done
+To compile and run any program:
 
-Run an executable: ./bin/your_program
+```bash
+gcc filename.c -o filename
+./filename
+```
 
-File & naming conventions
-Filenames: category_algorithm.c (e.g., arrays_binary_search.c)
-Each file should include a header comment with:
-Problem statement (short)
-Time & space complexity
-Example usage / sample input-output
-Contributing
-Contributions are welcome. Suggested workflow:
+You may need to install [GCC](https://gcc.gnu.org/) or [Clang](https://clang.llvm.org/) if not already done.
 
-Fork the repo
-Create a branch: git checkout -b feature/your-topic
-Add your C file(s) following the naming and documentation conventions
-Ensure code compiles cleanly with -Wall -Wextra
-Open a pull request with a clear description of changes
-Coding style:
+## Repository Structure
 
-Target C11
-Meaningful names, modular functions
-Keep functions small and documented
-Avoid global state where possible
-Testing
-Include example input and expected output in file comments. If adding multiple related files, include a small test driver or instructions in the folder README.
+- **arrays/** — Array operations and algorithms
+- **sorting/** — Sorting algorithms
+- **searching/** — Search algorithms
+- **strings/** — String manipulation
+- And more...
 
-License
-MIT — see LICENSE file.
+## Contributing
 
-Contact
-Repo owner: @Kartikk-git
+Feel free to fork the repository and submit pull requests for improvements or new programs!
+
+## License
+
+This repository is licensed under the MIT License.
+
+## Author
+
+Maintained by [Kartikk-git](https://github.com/Kartikk-git)
